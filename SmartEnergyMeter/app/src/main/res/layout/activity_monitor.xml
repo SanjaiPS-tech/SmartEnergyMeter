@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:text="Status: Connecting..."
+        android:textSize="16sp"
+        android:textColor="#03DAC5"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#1e1e1e"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/readingText"
+            android:text="V: ---, I: ---, P: ---"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1e1e1e" />
+</LinearLayout>
